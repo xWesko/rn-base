@@ -10,6 +10,8 @@ module.exports = {
     '^@/theme(.*)$',
     '^@/hooks(.*)$',
     '^@/navigation(.*)$',
+    '^@/navigation/authStack$',
+    '^@/navigation/privateStack$',
     '^@/translations(.*)$',
     '', // empty line
     '^@/components/atoms(.*)$',

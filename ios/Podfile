@@ -17,6 +17,12 @@ end
 target 'app_base' do
   config = use_native_modules!
 
+  pod 'react-native-bottom-tabs', :path => '../node_modules/react-native-bottom-tabs'
+
+  # Dependencias específicas con modular headers
+  pod 'SDWebImage', :modular_headers => true
+  pod 'SDWebImageSVGCoder', :modular_headers => true
+
   use_react_native!(
     :path => config[:reactNativePath],
     # An absolute path to your application root.
